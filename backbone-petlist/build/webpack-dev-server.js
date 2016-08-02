@@ -9,6 +9,15 @@ import webpackConfig from './dev.config.babel';
 const compiler = webpack(webpackConfig);
 const app = express();
 
+function readJsonFileSync(filepath, encoding){
+
+    if (typeof (encoding) == 'undefined'){
+        encoding = 'utf8';
+    }
+    var file = fs.readFileSync(filepath, encoding);
+    return JSON.parse(file);
+}
+
 const serverOptions = {
 //  contentBase: `http://${config.server_host}:${config.server_port}`,
   contentBase: 'src',
@@ -25,6 +34,29 @@ const middleware = webpackMiddleware(compiler, serverOptions);
 app.use(middleware);
 app.use(webpackHotMiddleware(compiler));
 app.use('/static', express.static('./src/web-api'));
+
+app.use('/api/search', function(req, res) {
+
+  const service = req.query.service;
+  let file = 'search.json';
+
+  if(service) {
+    file = `search-${service}.json`;
+  }
+
+  let json = {
+    search: []
+  };
+
+  try {
+    json = readJsonFileSync(`./src/web-api/${file}`);
+  } catch(err) {
+    res.status(404);
+  }
+
+  res.json(json);
+
+});
 
 app.listen(config.server_port, function onAppListening(err) {
   if (err) {

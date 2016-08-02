@@ -1,0 +1,43 @@
+{
+  "search" : [
+    {
+      "title": "Tattoine Doggy Paradise",
+      "description": "The force is strong with this one.",
+      "user": {
+        "first": "luke",
+        "last": "skywalker"
+      },
+      "pet": {
+        "id": 1,
+        "name": "yoda",
+        "type": "swamprat"
+      }
+    },
+    {
+      "title": "Alderaan's Getaway",
+      "description": "Well, someday you'll come to Alderaan with me and see for yourself how wonderful it is. Not even you could be cynical about my world.",
+      "user": {
+        "first": "leia",
+        "last": "organa"
+      },
+      "pet": {
+        "id": 2,
+        "name": "yub nub",
+        "type": "ewok"
+      }
+    },
+    {
+      "title": "Mos Eisleys Pleasant Hideaway",
+      "description": "You'll never find a more wretched hive of scum and villainy",
+      "user": {
+        "first": "han",
+        "last": "solo"
+      },
+      "pet": {
+        "id": 3,
+        "name": "chewbacca",
+        "type": "wookie"
+      }
+    }
+  ]
+}
