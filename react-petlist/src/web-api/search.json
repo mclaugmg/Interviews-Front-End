@@ -1,43 +1,82 @@
 {
   "search" : [
     {
-      "title": "title 1",
-      "description": "word1 description1 word2 description2 word3 description3 word4 description4",
+      "title": "The Final Frontier",
+      "description": "Boldly going were no man has gone before",
       "user": {
-        "first": "doug",
-        "last": "mc dougal"
+        "first": "James",
+        "last": "Kirk"
       },
       "pet": {
-        "id": 1,
-        "name": "fido",
+        "id": 4,
+        "name": "spock",
+        "type": "tribble"
+      }
+    },
+    {
+      "title": "The Enterprise Bay",
+      "description": "I'm a dog sitter, not a doctor",
+      "user": {
+        "first": "leonard",
+        "last": "mccoy"
+      },
+      "pet": {
+        "id": 5,
+        "name": "bones",
         "type": "dog"
-      }      
-    },
-    {
-      "title": " yippie skippy doggie  day-daycare",
-      "desciption": "description description",
-      "user": {
-        "first": "george",
-        "last": "lucus"
-      },
-      "pet": {
-        "id": 2,
-        "name": "kitty",
-        "type": "cat"
       }
     },
     {
-      "title": "my doggie's play pen",
-      "desciption": "memememem mememmememeem memememe mememememememe mememem",
+      "title": "The Miracle Worker",
+      "description": "A good Engineer is always a wee bit conservative, at least on paper",
       "user": {
-        "first": "luke",
-        "last": "skywalker"
+        "first": "montgomery",
+        "last": "scott"
       },
       "pet": {
-        "id": 3,
-        "name": "ribbet",
-        "type": "frog"
+        "id": 6,
+        "name": "scotty",
+        "type": "dog"
       }
-    }
+    },
+      {
+        "title": "Tattoine Doggy Paradise",
+        "description": "The force is strong with this one.",
+        "user": {
+          "first": "luke",
+          "last": "skywalker"
+        },
+        "pet": {
+          "id": 1,
+          "name": "yoda",
+          "type": "swamprat"
+        }
+      },
+      {
+        "title": "Alderaan's Getaway",
+        "description": "Well, someday you'll come to Alderaan with me and see for yourself how wonderful it is. Not even you could be cynical about my world.",
+        "user": {
+          "first": "leia",
+          "last": "organa"
+        },
+        "pet": {
+          "id": 2,
+          "name": "yub nub",
+          "type": "ewok"
+        }
+      },
+      {
+        "title": "Mos Eisleys Pleasant Hideaway",
+        "description": "You'll never find a more wretched hive of scum and villainy",
+        "user": {
+          "first": "han",
+          "last": "solo"
+        },
+        "pet": {
+          "id": 3,
+          "name": "chewbacca",
+          "type": "wookie"
+        }
+      }
   ]
 }
